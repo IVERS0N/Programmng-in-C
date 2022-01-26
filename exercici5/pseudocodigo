@@ -1,1 +1,27 @@
 
+function
+  var
+    INTEGER num1, num2
+  endvar
+  num1:=read();
+  num2:=read()
+  WRITE interchange(num1, num2);
+  //Se pasa num1 i num2 per referencia
+  
+  function read
+    var
+      INTEGER num;
+    endvar
+    WRITE "......";
+    READ num;
+    return num;
+endfunction
+
+
+function interchange (num1, num2)
+  var
+    INTEGER aux;
+  endvar
+  aux=num1;
+  num1=num2;
+  num2=aux;
